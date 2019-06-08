@@ -141,7 +141,6 @@ def addmeas2trackHist(tracks_hist, meas):
     for id in tracks_hist_ids:
         tracks_hist_x = findId(tracks_hist, id)[0]
         meas_x = findId(meas, id)[0]
-
         new_tracks_hist_x = tracks_hist_x.copy()
 
         new_tracks_hist_x['range'] = np.append(tracks_hist_x[0]['range'], meas_x['range'])
